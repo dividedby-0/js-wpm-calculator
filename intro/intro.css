@@ -1,0 +1,102 @@
+#intro-container {
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#greeting-text {
+  margin-top: 40vh;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  animation-name: text-focus-in, slide-top;
+  animation-duration: 1.2s, 0.5s;
+  animation-delay: 0ms, 1.5s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53),
+    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+  /* animation-iteration-count: 1, 1; */
+}
+
+#instructions {
+  color: var(--shadow);
+  padding-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  animation-name: text-focus-in;
+  animation-duration: 1.2s;
+  animation-delay: 1.6s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  transform: translateY(-180px);
+}
+
+#start-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(-110px);
+  visibility: hidden;
+  animation-name: text-focus-in;
+  animation-duration: 1.2s;
+  animation-delay: 1.6s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-fill-mode: forwards;
+}
+
+#start-button {
+  margin-bottom: 0.5rem;
+  animation-name: pulsate-fwd;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-timing-function: ease-in-out infinite both;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+/* animations */
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200px);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

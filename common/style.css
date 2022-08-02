@@ -1,0 +1,29 @@
+@import url('/intro/intro.css');
+@import url('/readingtest/readingtest.css');
+@import url('/results/results.css');
+
+/* general resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* end of resets */
+
+:root {
+  --primary: #7a4495;
+  --secondary: #fce2db;
+  --shadow: #b270a2;
+  --shadow2: #ff8fb1;
+}
+
+body {
+  font-family: 'Uchen', serif;
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
