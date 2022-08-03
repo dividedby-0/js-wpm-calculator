@@ -63,6 +63,10 @@
   animation-iteration-count: infinite;
 }
 
+#start-button-label {
+  font-size: 1.3rem;
+}
+
 /* animations */
 @keyframes text-focus-in {
   0% {

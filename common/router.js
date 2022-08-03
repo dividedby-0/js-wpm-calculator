@@ -28,9 +28,11 @@ const main = async () => {
 
 main();
 
-const onNavClick = (pathname) => {
+const startTest = (pathname) => {
+  root.classList.add('slide-out-top');
   window.history.pushState({}, pathname, window.location.origin + pathname);
-  root.innerHTML = routes[pathname];
+  setTimeout(() => (root.innerHTML = routes[pathname]), 2000);
+  //todo fix root position off screen
 };
 
 window.onpopstate = () => {
