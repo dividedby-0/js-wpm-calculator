@@ -26,7 +26,11 @@ body {
   background-color: var(--secondary);
 }
 
-/* animations */
+root {
+  opacity: 0;
+}
+
+/* common animations */
 
 .slide-out-top {
   animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;

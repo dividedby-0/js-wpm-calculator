@@ -1,0 +1,77 @@
+#reading-test-container {
+  color: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  text-align: justify;
+  /* text-indent: 2rem; */
+  /* opacity: 0; */
+}
+
+#reading-test-text:first-child::first-letter {
+  padding: 0 0.3rem;
+  margin: 1rem 0.3rem 0 0;
+  font-size: 4rem;
+  float: left;
+  line-height: 1.5;
+  border: 2px solid;
+}
+
+#stop-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* transform: translateY(-110px); */
+  visibility: hidden;
+  padding-top: 2rem;
+
+  animation-name: text-focus-in;
+  animation-duration: 1.2s;
+  animation-delay: 1.6s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-fill-mode: forwards;
+}
+
+#stop-button {
+  margin-bottom: 0.5rem;
+  animation-name: pulsate-fwd;
+  animation-duration: 1s;
+  animation-delay: 1.8s;
+  animation-timing-function: ease-in-out infinite both;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#stop-button-label {
+  font-size: 1.3rem;
+}
+
+.show-reading-test {
+  animation-name: text-focus-in;
+  animation-duration: 1.2s;
+  /* animation-delay: 1.6s; */
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
