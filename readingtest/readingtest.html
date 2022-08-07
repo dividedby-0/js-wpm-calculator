@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/readingtest/readingtest.css" />
-<script src="/readingtest/readingtest.js"></script>
 
 <div id="reading-test-container">
   <p id="reading-test-text">
@@ -38,7 +37,7 @@
   </p>
   <button
     id="stop-button-container"
-    onclick="stopTest('/results'); return false;"
+    onclick="stopTest('/results', observer.startTime); return false;"
   >
     <svg
       id="stop-button"

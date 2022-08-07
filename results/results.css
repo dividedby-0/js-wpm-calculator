@@ -1,0 +1,38 @@
+#results-container {
+  color: var(--shadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  text-align: justify;
+  /* text-indent: 2rem; */
+  /* opacity: 0; */
+}
+
+.show-results {
+  animation-name: text-focus-in;
+  animation-duration: 1.2s;
+  /* animation-delay: 1.6s; */
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
