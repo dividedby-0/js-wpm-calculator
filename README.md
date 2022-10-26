@@ -1,2 +1,2 @@
 # js-wpm-calculator
-A WPM (words per minute) calculator that will tell you how long it will take you to finish some classic novels. Made with vanilla Javascript.
+A WPM (words per minute) reading speed calculator that tells how long it will take you to finish some classic novels. Includes SPA-like routing made with vanilla Javascript.
