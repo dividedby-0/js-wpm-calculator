@@ -8,21 +8,37 @@
   flex-direction: column;
 }
 
-#greeting-text {
+#greeting-text-line-1 {
   margin-top: 40vh;
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
   text-align: center;
   font-size: 3rem;
   animation-name: text-focus-in, slide-top;
+  animation-delay: 0ms, 4s;
   animation-duration: 1.2s, 0.5s;
-  animation-delay: 0ms, 1.5s;
   animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53),
     cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-fill-mode: forwards;
   /* animation-iteration-count: 1, 1; */
 }
 
+#greeting-text-line-2 {
+  margin-top: 48vh;
+  padding: 1rem 1rem 1rem 0.5rem;
+  text-align: center;
+  font-size: 3rem;
+  animation-name: text-focus-in, slide-top-line-2;
+  animation-delay: 1.3s, 4s;
+  animation-duration: 1.2s, 0.5s;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53),
+    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1, 1;
+  opacity: 0;
+}
+
 #instructions {
+  font-weight: 600;
   color: var(--shadow);
   padding-top: 0;
   padding-left: 2rem;
@@ -32,7 +48,7 @@
   margin-top: 0;
   animation-name: text-focus-in;
   animation-duration: 1.2s;
-  animation-delay: 1.6s;
+  animation-delay: 3.7s;
   animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   animation-fill-mode: forwards;
   visibility: hidden;
@@ -48,7 +64,7 @@
   visibility: hidden;
   animation-name: text-focus-in;
   animation-duration: 1.2s;
-  animation-delay: 1.6s;
+  animation-delay: 5.5s;
   animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   animation-fill-mode: forwards;
 }
@@ -87,6 +103,16 @@
   }
   100% {
     transform: translateY(-200px);
+  }
+}
+
+@keyframes slide-top-line-2 {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-200px);
+    margin-top: 40vh;
   }
 }
 

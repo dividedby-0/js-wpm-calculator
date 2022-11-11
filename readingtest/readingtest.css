@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   padding-top: 2rem;
-  padding-left: 2rem;
+  padding-left: 1rem;
   padding-right: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -20,7 +20,7 @@
   margin: 1rem 0.3rem 0 0;
   font-size: 4rem;
   float: left;
-  line-height: 1.5;
+  line-height: 1.1;
   /* border: 2px solid; */
 }
 
@@ -38,6 +38,7 @@
   animation-delay: 1.6s;
   animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   animation-fill-mode: forwards;
+  padding-bottom: 2rem;
 }
 
 #stop-button {

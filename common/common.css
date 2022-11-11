@@ -14,16 +14,25 @@ button {
 /* end of resets */
 
 :root {
-  --primary: #7a4495;
-  --secondary: #fce2db;
-  --shadow: #b270a2;
-  --shadow2: #ff8fb1;
+  --coffee: #ad8b73;
+  --pinkish: #ceab93;
+  --cream: #e3caa5;
+  --light-beige: #fffbe9;
+}
+
+.title-container {
+  display: flex;
+  /* flex-direction: column; */
 }
 
 body {
   font-family: 'Uchen', serif;
-  color: var(--primary);
-  background-color: var(--secondary);
+  color: var(--coffee);
+  background-image: linear-gradient(
+    90deg,
+    var(--light-beige) 0 95%,
+    var(--cream)
+  );
 }
 
 root {

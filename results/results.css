@@ -24,6 +24,10 @@
   visibility: visible;
 }
 
+#results-total-time {
+  font-size: 3rem;
+}
+
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);

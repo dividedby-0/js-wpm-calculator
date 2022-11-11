@@ -1,1 +1,5 @@
-const totalTime = document.getElementById('results-total-time');
+// const showTotalTime = () => {
+//   console.log('show total time');
+//   let resultsTotalTime = document.getElementById('results-total-time');
+//   return resultsTotalTime;
+// };

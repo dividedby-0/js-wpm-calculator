@@ -1,5 +1,8 @@
 const root = document.getElementById('root');
 
+let durationMinSec;
+let resultsTotalTime;
+
 // start routing logic
 
 let intro = '';
@@ -40,11 +43,19 @@ window.onpopstate = () => {
 
 let observer = new MutationObserver(function () {
   let startTime;
+
   if (root.classList == 'show-reading-test') {
     this.startTime = Date.now();
     // console.log(root.classList.contains('show-reading-test'));
+    console.log(this);
     console.log(this.startTime);
-    return this.startTime; //todo not exporting value
+    return this.startTime;
+  }
+
+  if (root.classList == 'show-results') {
+    console.log(`added class show-results`);
+    resultsTotalTime = document.getElementById('results-total-time');
+    resultsTotalTime.innerHTML = totalTime + ` seconds`;
   }
 });
 
