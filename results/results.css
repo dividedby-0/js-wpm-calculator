@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #494737;
 }
 
 .results-total-time-container {
@@ -48,7 +49,7 @@
 
 .show-results {
   animation-name: text-focus-in;
-  animation-duration: 1.2s;
+  animation-duration: 3s;
   /* animation-delay: 1.6s; */
   animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
   animation-fill-mode: forwards;
@@ -57,10 +58,12 @@
 
 .results-total-time {
   font-size: 3rem;
+  color: #494737;
 }
 
 .results-wpm-score {
   font-size: 3rem;
+  color: #494737;
 }
 
 @keyframes text-focus-in {

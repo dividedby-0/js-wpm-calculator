@@ -16,12 +16,13 @@
 }
 
 #reading-test-text:first-child::first-letter {
-  padding: 0 0.3rem;
-  margin: 1rem 0.3rem 0 0;
+  color: #494737;
+  padding: 1rem;
+  margin: 0 1rem 0 0;
   font-size: 4rem;
   float: left;
-  line-height: 1.1;
-  /* border: 2px solid; */
+  /* line-height: 2; */
+  border: 2px solid #ad8b73;
 }
 
 #stop-button-container {
