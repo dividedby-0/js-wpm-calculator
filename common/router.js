@@ -2,6 +2,7 @@ const root = document.getElementById('root');
 
 let durationMinSec;
 let resultsTotalTime;
+let resultsWpmScore;
 
 // start routing logic
 
@@ -48,8 +49,10 @@ let observer = new MutationObserver(function () {
   }
 
   if (root.classList == 'show-results') {
-    resultsTotalTime = document.getElementById('results-total-time');
-    resultsTotalTime.innerHTML = totalTime + ` seconds`;
+    resultsTotalTime = document.querySelector('.results-total-time');
+    resultsWpmScore = document.querySelector('.results-wpm-score');
+    resultsTotalTime.innerHTML = `${totalTime} seconds`;
+    resultsWpmScore.innerHTML = `${wpmScore}`;
   }
 });
 
