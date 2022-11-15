@@ -34,7 +34,7 @@ const main = async () => {
 main();
 
 window.onpopstate = () => {
-  root.innerHTML = routes[window.location.pathname];
+  root.innerHTML = intro;
 };
 
 // end routing logic
